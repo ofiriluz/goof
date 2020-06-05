@@ -5,25 +5,27 @@
   "main": "app.js",
   "dependencies": {
     "adm-zip": "^0.4.11",
-    "body-parser": "^1.17.1",
-    "dustjs-linkedin": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "dustjs-linkedin": "^2.7.5",
     "ejs": "^2.5.5",
     "errorhandler": "^1.4.3",
     "express": "^4.16.0",
     "express-fileupload": "^1.1.6",
     "jquery": "^3.5.0",
     "lodash": "^4.17.12",
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "moment": "^2.19.3",
     "mongoose": "^5.7.5",
     "ms": "^2.0.0",
     "npmconf": "^2.1.3",
-    "snyk": "^1.315.1",
+    "snyk": "^1.336.0",
     "st": "^1.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap test/*.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/jonathan-gruber/goof/issues"
   },
-  "homepage": "https://github.com/jonathan-gruber/goof#readme"
+  "homepage": "https://github.com/jonathan-gruber/goof#readme",
+  "snyk": true
 }
